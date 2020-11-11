@@ -19,18 +19,11 @@ sudo add-apt-repository –y ppa:teejee2008/ppa
 sudo apt update
 
 #VirtualBox Install
-sudo apt purge -y virtualbox
-mkdir vbox && cd vbox
-wget https://download.virtualbox.org/virtualbox/6.1.16/virtualbox-6.1_6.1.16-140961~Ubuntu~eoan_amd64.deb 
-sudo dpkg -i virtualbox-6.1_6.1.16-140961~Ubuntu~eoan_amd64.deb
-sudo apt --fix-broken -y install
-cd ..
-sudo rm -r vbox
-
+wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
+echo "deb [arch=amd64] https://download.virtualbox.org/virtualbox/debian eoan contrib" | sudo tee /etc/apt/sources.list.d/vbox.list
+sudo apt install virtualbox-6.1
 
 #MetaPackage
 sudo apt install -y wireshark ubuntu-restricted-extras gparted gimp timeshift brave-browser gnome-tweaks gnome-shell-extensions openjdk-11-jdk default-jre snap wine-stable winetricks ttf-mscorefonts-installer unrar zip unzip p7zip-full p7zip-rar rar
 
 sudo snap install atom vlc
-
-#test
