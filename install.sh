@@ -31,3 +31,5 @@ sudo dpkg -i pt.deb
 sudo apt install -y wireshark ubuntu-restricted-extras gparted gimp timeshift brave-browser gnome-tweaks gnome-shell-extensions openjdk-11-jdk default-jre snap wine-stable winetricks ttf-mscorefonts-installer unrar zip unzip p7zip-full p7zip-rar rar
 
 sudo snap install atom vlc
+
+#test
