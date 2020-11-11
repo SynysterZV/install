@@ -22,10 +22,10 @@ sudo apt update
 sudo apt purge -y virtualbox
 mkdir vbox && cd vbox
 wget https://download.virtualbox.org/virtualbox/6.1.16/virtualbox-6.1_6.1.16-140961~Ubuntu~eoan_amd64.deb 
-sudo dpkg -i virtualbox-6.1_6.1.16-140961_Ubuntu_eoan_amd64.deb
+sudo dpkg -i virtualbox-6.1_6.1.16-140961~Ubuntu~eoan_amd64.deb
 sudo apt --fix-broken -y install
-sudo rm virtualbox-6.1_6.1.16-140961_Ubuntu_eoan_amd64.deb
-cd ~
+cd ..
+sudo rm -r vbox
 
 #MetaPackage
 sudo apt install -y wireshark ubuntu-restricted-extras gparted gimp timeshift brave-browser gnome-tweaks gnome-shell-extensions openjdk-11-jdk default-jre snap wine-stable winetricks ttf-mscorefonts-installer unrar zip unzip p7zip-full p7zip-rar rar
