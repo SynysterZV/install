@@ -33,3 +33,4 @@ sudo apt install -y wireshark ubuntu-restricted-extras gparted gimp timeshift br
 
 sudo snap install atom vlc
 
+#test
