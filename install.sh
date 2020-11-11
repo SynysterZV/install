@@ -21,6 +21,7 @@ sudo apt update
 #VirtualBox Install
 wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
 echo "deb [arch=amd64] https://download.virtualbox.org/virtualbox/debian eoan contrib" | sudo tee /etc/apt/sources.list.d/vbox.list
+sudo apt update
 sudo apt install virtualbox-6.1
 
 #Packet Tracer
@@ -30,6 +31,7 @@ sudo dpkg -i pt.deb
 #MetaPackage
 sudo apt install -y wireshark ubuntu-restricted-extras gparted gimp timeshift brave-browser gnome-tweaks gnome-shell-extensions openjdk-11-jdk default-jre snap wine-stable winetricks ttf-mscorefonts-installer unrar zip unzip p7zip-full p7zip-rar rar
 
-sudo snap install atom vlc
+sudo snap install --classic atom
+sudo snap install  vlc
 
 #test
