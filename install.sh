@@ -1,3 +1,8 @@
+#Download Packet Tracer from Github Large File Storage
+sudo apt install git-lfs
+git lfs install
+git lfs pull
+
 #==================================UPDATE====================================
 sudo apt-get update && sudo apt-get upgrade -y
 sudo apt remove apport apport-gtk #Remove annoying crash reports
